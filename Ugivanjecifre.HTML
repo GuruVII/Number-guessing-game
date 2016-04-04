@@ -1,0 +1,80 @@
+
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <title>Ugibanje Številke</title>
+    
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>body{padding-top:50px;}.starter-template{padding:40px 15px;text-align:center;}</style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="js/code.js"></script>
+    </head>
+
+    
+    
+    
+    
+    
+    
+<body>
+    <div class="row">
+    <div class="col-md-6 col-md-offset-2">
+    <div class="col-xs-6"><Button id ="1-100" class="btn btn-success btn-lg btn-block">Find a random number between 1 and 100</Button> </div>
+    <div class="col-xs-7"><button id ="x-y" class="btn btn-success btn-lg btn-block">Find a random number between two numbers</button></div>
+        <div class="col-xs-6"><button id = "computer-guess" class="btn btn-success btn-lg btn-block">Have computer find a number you've set</button></div>
+    </div>
+       <div class="col-xs-8 col-md-offset-2" > <label style="margin-left:15px;">Allowed number of guesses (leave at 0 for 9999 allowed tries): <input type="text" id="stevilo-ugibanj" value="0"></label></div>
+        </div>
+    
+         <div class="row" id="generiranjeDo100">
+        <div class="col-md-6 col-md-offset-2" >
+         <div class="col-xs-12"><h1>Guess the Number between 1 and 100</h1></div>
+        <div class="col-xs-12"> <button class="btn btn-primary" id="generiraj">Generate a number to guess</button></div>     
+             
+             
+         <div class="col-xs-4"><label>Input guess:</label><input type="text" id="stevilka"><br></div>
+         
+        <div class="col-xs-12"> <button class="btn btn-primary" id="ugibaj">Guess!</button></div>
+        <div class="col-xs-8" id="rezultat"></div>
+             <div class="col-xs-12" id="seznam-ugibanj-1-100"></div>
+             </div></div>
+            
+    <div class="row" id="generiranjeX-Y" style="display:none;">
+        <div class="col-md-6 col-md-offset-2" id="generiranjeX-Y">
+         <div class="col-xs-12"><h1>Guess the Number between X and Y </h1></div>
+           <div class="col-xs-4"><label>Input X</label><input type="text" id="stevilkaX" value="1"><br></div>
+            <div class="col-xs-4"><label>Input Y</label><input type="text" id="stevilkaY" value="100"><br></div>
+        <div class="col-xs-12"> <button class="btn btn-primary" id="generiraj-x-y">Generate a number to guess</button></div>     
+             
+             
+         <div class="col-xs-4"><label>Input guess:</label><input type="text" id="stevilka-x-y"><br></div>
+         
+        <div class="col-xs-12"> <button class="btn btn-primary" id="ugibaj-x-y">Guess!</button></div>
+        <div class="col-xs-8" id="rezultat-x-y"></div>
+             <div class="col-xs-12" id="seznam-ugibanj-x-y"></div>
+                        
+    </div>
+        </div>
+    <div class="row" id="RacunalnikUgiba" style="display:none;">
+        <div class="col-md-6 col-md-offset-2" id="RacunalnikUgiba" >
+         <div class="col-xs-12"><h1>Let the computer guess the number (the computer has unlimited allowed tries)</h1></div>
+         <div class="col-xs-4"><label>Input number:</label><input type="text" id="stevilka-racunalnik-ugiba" value="1337"><br></div>   
+        <div class="col-xs-12"> <button class="btn btn-primary" id="racunalnik-ugibaj">Computer Guess!</button></div>
+        
+             <div class="col-xs-12" id="seznam-ugibanj-racunalnik"></div>
+        
+         
+     </div>
+        </div>
+            </body>
+    </html>
